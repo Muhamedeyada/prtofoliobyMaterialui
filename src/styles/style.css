@@ -1,0 +1,19 @@
+.mainContact {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.greenText {
+  color: #96bb7c;
+}
+
+@media (max-width: 768px) {
+  .mainContact {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mainContact div {
+    text-align: center;
+  }
+}

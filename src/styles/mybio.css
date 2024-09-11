@@ -1,0 +1,42 @@
+.parent {
+  display: flex;
+
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  margin-left: 80px;
+  margin-right: 80px;
+  margin-top: 50px;
+}
+
+.image-container {
+  flex-basis: 45%;
+  display: flex;
+  justify-content: center;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.text-container {
+  flex-basis: 65%;
+  text-align: left;
+}
+.btns {
+  margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+  .parent {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text-container,
+  .image-container {
+    flex-basis: 100%;
+  }
+}
